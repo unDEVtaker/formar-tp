@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.CustomBrowser": "chrome"
+    "liveServer.settings.CustomBrowser": "chrome",
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.fontFamily": "Hack Nerd Font",
+    "editor.fontSize": 16
 }
