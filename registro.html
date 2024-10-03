@@ -13,7 +13,7 @@
             <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
         </div>
         <div class="barraDeBusqueda">
-            <form action="" method="GET">
+            <form action="#" method="GET">
                 <input type="text" placeholder="Buscar productos, marcas y más...">
                 <button type="submit">Buscar</button>
             </form>
@@ -32,7 +32,7 @@
     </header>
     <h1>Registro de Usuario</h1>
 
-    <form action="" method="GET">
+    <form action="#" method="GET">
         <label for="nombreApellido">Nombre y Apellido:</label>
         <input type="text" id="nombreApellido" name="nombreApellido" required><br><br>
 
@@ -50,21 +50,25 @@
 
         <label for="perfil">Perfil del usuario:</label>
         <select id="perfil" name="perfil" required>
+            <option value="">Seleccione un perfil</option>
             <option value="comprar">Comprar</option>
             <option value="vender">Vender</option>
-        </select><br><br>
+        </select>
 
-        <label for="categorias">Categorías de interés:</label><br>
         <input type="checkbox" id="electro" name="categorias" value="Electro">
         <label for="electro">Electro</label><br>
+        
         <input type="checkbox" id="moda" name="categorias" value="Moda">
         <label for="moda">Moda</label><br>
+        
         <input type="checkbox" id="hogar" name="categorias" value="Hogar">
         <label for="hogar">Hogar</label><br>
+        
         <input type="checkbox" id="jugueteria" name="categorias" value="Juguetería">
         <label for="jugueteria">Juguetería</label><br>
+        
         <input type="checkbox" id="vidaSana" name="categorias" value="Vida Sana">
-        <label for="vidaSana">Vida Sana</label><br><br>
+        <label for="vidaSana">Vida Sana</label><br>
 
         <label for="fotoUsuario">Foto de usuario:</label>
         <input type="file" id="fotoUsuario" name="fotoUsuario"><br><br>
