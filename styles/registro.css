@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-register {
+    text-align: center;
+    background-color: var(--color-grisclaro);
+    color: var(--color-grisoscuro);
+    height: auto; /* Cambia a auto para que el formulario ajuste su altura */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em; /* Añadido padding para un mejor espaciado */
+    border-radius: 10px; /* Para bordes redondeados */
+}
+
+label {
+    display: block; /* Para que las etiquetas ocupen todo el ancho */
+    margin-bottom: 0.5em; /* Espacio entre la etiqueta y el input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+input[type="password"],
+select {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 0.5em; /* Espacio interno dentro del input */
+    border: 1px solid var(--color-grisoscuro); /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 1em; /* Espacio entre inputs */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.p-register{
+    font-size: var(--texto-descript);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 0.7em 1.5em; 
+    border: none;
+    border-radius: 5px;
+    background-color: var(--celeste);
+    color: white; 
+    cursor: pointer;
+}

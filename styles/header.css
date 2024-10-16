@@ -1,0 +1,74 @@
+header {
+    background-color: #EAC926;
+    padding: 5vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    height: 15vw;
+    margin: 4vw;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+}
+
+input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+h1 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.icono-mano {
+    margin-right: 5px;
+}
+
+.icono2 {
+    margin-left: 5px;
+}
+
+.nav {
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav-menu-burger {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu {
+    text-align: center;
+    background-color: #1259c3;
+    color: white;
+    font-size: 25px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
