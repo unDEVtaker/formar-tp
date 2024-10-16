@@ -1,0 +1,86 @@
+/* Estilos para el header */
+header {
+    background-color: var(--amarillo); /* Color amarillo */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+    display: block;
+    margin: 0 auto;
+}
+
+.barraDeBusqueda {
+    margin: 20px auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraDeBusqueda input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.barraDeBusqueda .search-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+.barraDeBusqueda .search-img {
+    width: 25px;
+    height: 25px;
+}
+
+.info {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.botones-login button {
+    background-color: var(--azul);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.botones-login button:hover {
+    background-color: var(--celeste);
+}
+
+.burger-menu {
+    background-color: var(--azul);
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.burger-menu i {
+    color: white;
+    font-size: 24px;
+}
