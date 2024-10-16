@@ -46,26 +46,27 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; 
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 5px;;
+}
+
+nav ul li:nth-child(-n+4) {
+    margin-right: auto;
+}
+
+nav ul li:nth-child(n+5) {
+    margin-left: auto;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 16px;
-}
-
-.botones-login button {
-    background-color: var(--azul);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
 }
 
 .botones-login button:hover {
