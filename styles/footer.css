@@ -11,19 +11,58 @@ footer {
     text-align: center;
 }
 
+.footer-copyright {
+    color:var(--color-gris);
+}
+
+footer .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer>section div {
     margin: 30px;
+    text-align: center;
 }
 
 footer>section>div i {
     color: var(--color-azul-claro);
     font-size: 2em;
     margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-copyright {
-    color: var(--color-gris);
+/* PASO 2 animaciones */
+
+footer>section>div i:hover {
+    color: var(--color-amarillo-ML);
+    transform: scale(1.3);
 }
+
+/* PASO 2 flexbox footer */
+
+@media screen and (min-width: 1024px) {
+    footer > section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Para que el último div (copyright) pueda ocupar todo el ancho */
+        height: 250px;
+    }
+
+
+    footer > section > div:nth-child(-n+3) {
+        width: 20%;
+    }
+
+    footer > section > div {
+        flex-basis: 25%;
+        margin-bottom: 20px; 
+    }
+}
+
+/*------------------------------------*/
 
 @media screen and (min-width:768px) { /* TABLET */
     html {
