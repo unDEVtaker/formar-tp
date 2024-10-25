@@ -1,0 +1,229 @@
+:root {
+    --color-amarillo-ML: #EAC926;
+    --color-gris: #666;
+    --color-gris-claro: #ebebeb;
+    --color-azul: #03264C;
+    --color-azul-claro: #1259c3;
+    --color-verde-descuento: #39b54a;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+#banner{
+    display: none;
+}
+
+.main-h2 {
+    color: #666;
+    padding: 10px;
+}
+
+.main-section-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section-producto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    text-align: left;
+    padding: 15px;
+}
+
+div>h4 {
+    color: #666;
+}
+
+.fa-truck {
+    color: var(--color-verde-descuento);
+    padding: 6px 5px;
+    border: solid 1px;
+    border-radius: 100%;
+    position: absolute;
+    font-size: 15px;
+    top: -15px;
+    right: 20px;
+}
+
+.precio-container{
+    display: flex;
+    width: 100%;
+}
+
+.precio{
+    font-size: 18px;
+    padding-top: 0px;
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 20px;
+}
+.descuento{
+    font-size: 16px;
+    color: var(--color-verde-descuento);
+    display: inline-block;
+    width: 70%;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+.fuente-descripcion{
+    font-size: 16px;
+}
+
+
+
+/*formato responsive*/
+
+@media screen and (min-width:768px) { /* Tablet */
+    #banner {
+        display: block;
+        width: 100%;
+    }
+    .precio {
+        padding-top: 0;
+    }
+    .main-home {
+        padding: 20px 9vw ; /* si aumentamos el vw a 10vw sobra borde en mobile */
+        background-color:#ebebeb;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    section { /* Se evita el borde derecho vacio */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .main-h2 {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .main-h2-ofertas {
+        margin-top: 20px;
+    }
+    .main-section-article {
+        width: 300px;
+        box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    }
+    .main-section-producto {
+        margin-bottom: 0;
+    }
+    /* REGISTER */
+    .register-main {
+        padding: 20px 0;
+    }
+    .register-userphoto {
+        text-align: left;
+    }
+    .register-userphoto input {
+        margin: 20px 0;
+    }
+    .register-h2 {
+        text-align: left;
+        margin: 0;
+    }
+    .register-interest-father {
+        text-align: left;
+        margin: 0 -7.5vw;
+    }
+    .register-interest {
+        margin: 20px 7.5vw;
+    }
+    .register-interest input {
+        margin-right: 0px;
+        position: absolute;
+        left: -10%;
+    }
+    .register-label {
+        margin: 20px 0;
+    }
+    .register-main {
+        margin: 0 200px;
+    }
+    body {
+        background-color: #ebebeb;
+    }
+    .register-main input {
+        width: 100%;
+    }
+    /* LOGIN */
+    .main-login>form>div {
+        display: flex;
+        margin: 0 200px;
+    }
+}
+@media screen and (min-width:1024px) { /* Para evitar 3 articulos por fila */
+    .main-home {
+        padding: 20px 14vw ;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .main-home {
+        padding: 20px 1vw;
+        padding-bottom: 60px;
+    }
+    .register-main {
+        margin: 0 25vw;
+    }
+    .main-login {
+        margin: auto;
+    }
+    .register-div {
+        width: 50vw;
+    }
+    .register-interest-father {
+        text-align: left;
+        margin: 10px 0;
+        width: 50vw
+    }
+    .register-interest input {
+        margin-right: 0px;
+        position: absolute;
+        left: -10%;
+    }
+    .register-h2 {
+        width: 50vw;
+    }
+    .register-label {
+        width: 50vw;
+    }
+    .input-user-photo {
+        width: 50vw;
+        margin: 0;
+    }
+    .register-userphoto {
+        width: 50vw;
+    }
+    .register-interest {
+        width: 50vw;
+        margin-left: 0;
+    }
+    .user-profile-container {
+        width: 50vw;
+    }
+    .main-login  {
+        width: 75vw; 
+    }
+}
