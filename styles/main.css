@@ -14,6 +14,9 @@
     font-family: roboto, sans-serif;
 }
 
+img{
+    width: 300px;
+}
 p {
     font-size: 12px;
 }
@@ -90,9 +93,77 @@ div>h4 {
     font-size: 16px;
 }
 
+/* REGISTRO */
 
+.registro-main{
+    background-color: var(--color-gris-claro);
+}
 
-/*formato responsive*/
+.registro-div {
+    background-color: var(--color-gris-claro);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.registro-div>input {
+    padding: 10px ;
+    width: 85vw;
+    border: none;
+    margin: 20px 0;
+}
+
+.registro-h2 {
+    margin: 0 7.5vw;
+}
+
+.registro-label {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 7.5vw;
+}
+
+.registro-intereses {
+    margin: 20px 7.5vw;
+}
+
+.registro-intereses input {
+    margin-right: 10px;
+}
+
+.input-foto-usuario {
+    margin: 20px 7.5vw;
+    width: 85vw;
+}
+
+.registro-div>input[type="submit"] {
+    background-color:var(--color-azul-claro);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* LOGIN */
+
+.main-login {
+    background-color:#ebebeb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-login>form>div>input {
+    padding: 10px ;
+    width: 85vw;
+    border: none;
+    margin: 20px 0;
+}
+
+.main-login>form>div input[type="submit"] {
+    width: 85vw;
+    background-color:var(--color-azul-claro);
+    color: white;
+}
+
+/* formato responsive */
 
 @media screen and (min-width:768px) { /* Tablet */
     #banner {
@@ -103,13 +174,13 @@ div>h4 {
         padding-top: 0;
     }
     .main-home {
-        padding: 20px 9vw ; /* si aumentamos el vw a 10vw sobra borde en mobile */
+        padding: 20px 9vw ;
         background-color:#ebebeb;
         margin: auto;
         text-align: center;
         padding-bottom: 60px;
     }
-    section { /* Se evita el borde derecho vacio */
+    section {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -129,42 +200,43 @@ div>h4 {
     .main-section-producto {
         margin-bottom: 0;
     }
+
     /* REGISTER */
-    .register-main {
+    .registro-main {
         padding: 20px 0;
     }
     .register-userphoto {
         text-align: left;
     }
-    .register-userphoto input {
+    .registro-fotoUsuario input {
         margin: 20px 0;
     }
-    .register-h2 {
+    .registro-h2 {
         text-align: left;
         margin: 0;
     }
-    .register-interest-father {
+    .registro-intereses-padre {
         text-align: left;
         margin: 0 -7.5vw;
     }
-    .register-interest {
+    .registro-intereses {
         margin: 20px 7.5vw;
     }
-    .register-interest input {
+    .registro-intereses input {
         margin-right: 0px;
         position: absolute;
         left: -10%;
     }
-    .register-label {
+    .registro-label {
         margin: 20px 0;
     }
-    .register-main {
+    .registro-main {
         margin: 0 200px;
     }
     body {
-        background-color: #ebebeb;
+        background-color: var(--color-gris-claro);
     }
-    .register-main input {
+    .registro-main input {
         width: 100%;
     }
     /* LOGIN */
@@ -173,7 +245,7 @@ div>h4 {
         margin: 0 200px;
     }
 }
-@media screen and (min-width:1024px) { /* Para evitar 3 articulos por fila */
+@media screen and (min-width:1024px) {
     .main-home {
         padding: 20px 14vw ;
         padding-bottom: 60px;
@@ -184,43 +256,43 @@ div>h4 {
         padding: 20px 1vw;
         padding-bottom: 60px;
     }
-    .register-main {
+    .registro-main {
         margin: 0 25vw;
     }
     .main-login {
         margin: auto;
     }
-    .register-div {
+    .registro-div {
         width: 50vw;
     }
-    .register-interest-father {
+    .registro-intereses-padre {
         text-align: left;
         margin: 10px 0;
         width: 50vw
     }
-    .register-interest input {
+    .registro-intereses input {
         margin-right: 0px;
         position: absolute;
         left: -10%;
     }
-    .register-h2 {
+    .registro-h2 {
         width: 50vw;
     }
-    .register-label {
+    .registro-label {
         width: 50vw;
     }
-    .input-user-photo {
+    .input-foto-usuario {
         width: 50vw;
         margin: 0;
     }
-    .register-userphoto {
+    .registro-fotoUsuario {
         width: 50vw;
     }
-    .register-interest {
+    .registro-intereses {
         width: 50vw;
         margin-left: 0;
     }
-    .user-profile-container {
+    .perfil-container{
         width: 50vw;
     }
     .main-login  {

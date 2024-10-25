@@ -1,0 +1,38 @@
+:root {
+    --color-amarillo-ML: #EAC926;
+    --color-gris: #666;
+    --color-gris-claro: #ebebeb;
+    --color-azul: #03264C;
+    --color-azul-claro: #1259c3;
+    --color-verde-descuento: #39b54a;
+}
+
+footer {
+    text-align: center;
+}
+
+footer>section div {
+    margin: 30px;
+}
+
+footer>section>div i {
+    color: var(--color-azul-claro);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    color: var(--color-gris);
+}
+
+@media screen and (min-width:768px) { /* TABLET */
+    html {
+        background-color: white;
+    }
+    footer>section{
+        display: inline-block;
+    }
+    footer {
+        background-color: white;
+    }
+}
