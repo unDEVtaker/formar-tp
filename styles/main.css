@@ -7,6 +7,33 @@
     --color-verde-descuento: #39b54a;
 }
 
+/* animaciones */
+
+.main-section-producto h4 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.main-section-article:hover .main-section-producto h4 {
+    opacity: 1;
+}
+
+.main-section-article {
+    transition: box-shadow 0.3s ease;
+}
+
+.main-section-article:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fa-truck {
+    transition: transform 0.3s ease;
+}
+
+.main-section-article:hover .fa-truck {
+    transform: rotate(-90deg);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
